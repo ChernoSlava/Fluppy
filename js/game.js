@@ -30,6 +30,7 @@ function moveUp() {
   yPos -= 20;
 }
 
+
 // Create blocks
 let pipe = [];
 
@@ -52,6 +53,22 @@ const draw = () => {
     ctx.drawImage(pipeBottom, pipe[i].x, pipe[i].y + pipeUp.height + gap);
   
     pipe[i].x--;
+
+    if(pipe[i].x == 125) { // For generations new loacation 
+      pipe.push({
+        x: cvs.width,
+        y: Math.floor(Math.random() * pipeUp.height) - pipeUp.height
+      })
+    }
+
+    if(xPos + bird.width >= pipe[i].x // For reastart if have touch
+      && xPos <= pipe[i].x + pipeUp.width
+      && (yPos <= pipe[i].y + pipeUp.height
+      || yPos + bird.height >= pipe[i].y + pipeUp.height + gap)
+    ) {
+
+      location.reload()
+    }
   }
 
   ctx.drawImage(fg, 0, cvs.height - fg.height);
