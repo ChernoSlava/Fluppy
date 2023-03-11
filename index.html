@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fluppy</title>
+  <title lang="en">Fluppy game</title>
+  <meta name="keywords" content="html, css, js">
+  <meta name="author" content="Черногоров Вячеслав">
+  <meta name="description" content="Маленькая игра">
+  <link rel="stylesheet" href="./vendor/normalize.css">
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
 
-<body>
-  <canvas id="canvas" width="288" height="512"></canvas>
+<body class="page">
+  <header class="header">
+    <h1 class="header__title" lang="en">Мини игра Fluppy Jump</h1>
+  </header>
+  <main class="main">
+    <canvas id="canvas" class="game" width="288" height="512"></canvas>
+  </main>
+  <footer class="footer">
+    <p class="footer__author">&copy; Черногоров Вячеслав</p>
+    <div class="footer__links">
+      <p class="footer__links-title">Links</p>
+      <nav class="footer__links-nav">
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#" target="_blank" lang="en">GitHub</a></li>
+          <li><a class="footer__link" href="#" target="_blank" lang="en">LinkedIn</a></li>
+          <li><a class="footer__link" href="#" target="_blank" lang="en">Instagram</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
   <script src="js/game.js"></script>
 </body>
 

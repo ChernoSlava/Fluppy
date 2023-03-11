@@ -28,7 +28,7 @@ document.addEventListener("keydown", moveUp)
 
 function moveUp() {
   yPos -= 25;
-  fly.play()
+  // fly.play()
 }
 
 
@@ -68,15 +68,15 @@ const draw = () => {
     if(xPos + bird.width >= pipe[i].x // For reastart if have touch
       && xPos <= pipe[i].x + pipeUp.width
       && (yPos <= pipe[i].y + pipeUp.height
-      || yPos + bird.height >= pipe[i].y + pipeUp.height + gap)
-      || yPos + bird.height >+ cvs.height - fg.height) {
+      || yPos + bird.height >= pipe[i].y + pipeUp.height + gap
+      || yPos + bird.height >+ cvs.height - fg.height)) {
       
       location.reload()
     }
 
     if(pipe[i].x == 5) {
       score++;
-      score_audio.play()
+      // score_audio.play()
     }
   }
 
