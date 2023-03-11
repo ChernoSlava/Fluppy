@@ -5,9 +5,9 @@ html {
 
 .page {
   background: rgb(103, 16, 66);
-  background: linear-gradient(0deg, rgba(103, 16, 66, 1) 13%, rgba(20, 161, 175, 1) 100%);
+  background: linear-gradient(0deg, rgb(103, 16, 66) 13%, rgb(20, 161, 175) 100%);
   margin: 0 auto;
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif;
   max-width: 100%;
   height: 100%;
   display: flex;
@@ -21,7 +21,6 @@ html {
   justify-content: center;
   align-items: center;
 }
-
 .header__title {
   font-size: 50px;
   margin-top: 20px;
@@ -34,8 +33,7 @@ html {
   align-items: center;
   margin-top: -20px;
 }
-
-.game {
+.main .game {
   border: 1px solid #2196f3;
   border-radius: 20px;
 }
@@ -45,7 +43,6 @@ html {
   flex-direction: row;
   justify-content: space-between;
 }
-
 .footer__author {
   margin: 0;
   padding: 0;
@@ -54,36 +51,30 @@ html {
   margin-bottom: 20px;
   padding-left: 20px;
 }
-
 .footer__links {
   margin: 0;
   padding: 0;
   margin-right: 20px;
   margin-bottom: 20px;
-
 }
-
 .footer__links-title {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
   font-size: 20px;
 }
-
 .footer__links-nav {
   margin: 0;
   padding: 0;
 }
-
 .footer__list {
   margin: 0;
   list-style: none;
   padding: 0;
 }
-
 .footer__link {
   text-decoration: none;
   text-decoration: none;
   color: black;
   cursor: pointer;
-}
+}/*# sourceMappingURL=styles.css.map */

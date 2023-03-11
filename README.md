@@ -12,13 +12,15 @@
 
 ### Fluppy
 
-- HTML5
+- HTML5,
+- CSS3,
+- SCSS,
 - Canvas,
 - JavaScript.
 
 ---
 
-## Если выхотите без установки запустить проект вот ссылка на GithubPahe: [Link](http://127.0.0.1:5501/)
+## Если выхотите без установки запустить проект вот ссылка на GithubPahe: [Link](https://chernoslava.github.io/Fluppy/)
 ---
 ## Установка и запуск
 
@@ -53,5 +55,9 @@
 4) [Contacts keeper](https://github.com/ChernoSlava/contacts-keeper)
 4) [Fish gallery](https://github.com/ChernoSlava/fish-gallery)
 5) [Рефакторинг дипломного проекта Movies explorer](https://github.com/ChernoSlava/Movies-exlorer-refactor)
----
 
+### Проекты с использованием разных технологий:
+
+1) [Dihitals clock с использование SCSS/jQuery](https://github.com/ChernoSlava/Digital-Clock.git)
+2) [2d игра на Vanila JavaScript/Canvas](https://github.com/ChernoSlava/Fluppy)
+3) [Сайт по продаже бургеров React/Next js](https://github.com/ChernoSlava/Burgers-Next-JS)
