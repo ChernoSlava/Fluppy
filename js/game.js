@@ -23,8 +23,14 @@ score_audio.src = "audio/score.mp3";
 
 const gap = 90;
 
-// Bird position 
+// Button effects
+document.addEventListener("keydown", moveUp)
 
+function moveUp() {
+  yPos -= 20;
+}
+
+// Bird position 
 let xPos = 10;
 let yPos = 150;
 const grav = 1;
