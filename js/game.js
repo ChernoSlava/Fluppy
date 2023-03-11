@@ -27,7 +27,7 @@ const gap = 90;
 document.addEventListener("keydown", moveUp)
 
 function moveUp() {
-  yPos -= 20;
+  yPos -= 25;
 }
 
 
@@ -42,7 +42,7 @@ pipe[0] = {
 // Bird position 
 let xPos = 10;
 let yPos = 150;
-const grav = 1;
+const grav = 1.5;
 
 // Main function
 const draw = () => {
@@ -65,7 +65,8 @@ const draw = () => {
       && xPos <= pipe[i].x + pipeUp.width
       && (yPos <= pipe[i].y + pipeUp.height
       || yPos + bird.height >= pipe[i].y + pipeUp.height + gap)
-    ) {
+      || yPos + bird.height >+ cvs.height - fg.height
+      ) {
 
       location.reload()
     }
