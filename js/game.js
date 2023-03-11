@@ -28,6 +28,7 @@ document.addEventListener("keydown", moveUp)
 
 function moveUp() {
   yPos -= 25;
+  fly.play()
 }
 
 
@@ -75,6 +76,7 @@ const draw = () => {
 
     if(pipe[i].x == 5) {
       score++;
+      score_audio.play()
     }
   }
 
