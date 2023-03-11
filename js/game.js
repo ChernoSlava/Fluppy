@@ -39,10 +39,13 @@ pipe[0] = {
   y: 0,
 }
 
+let score = 0;
+
 // Bird position 
 let xPos = 10;
 let yPos = 150;
 const grav = 1.5;
+
 
 // Main function
 const draw = () => {
@@ -65,10 +68,13 @@ const draw = () => {
       && xPos <= pipe[i].x + pipeUp.width
       && (yPos <= pipe[i].y + pipeUp.height
       || yPos + bird.height >= pipe[i].y + pipeUp.height + gap)
-      || yPos + bird.height >+ cvs.height - fg.height
-      ) {
-
+      || yPos + bird.height >+ cvs.height - fg.height) {
+      
       location.reload()
+    }
+
+    if(pipe[i].x == 5) {
+      score++;
     }
   }
 
@@ -76,6 +82,11 @@ const draw = () => {
   ctx.drawImage(bird, xPos, yPos);
 
   yPos += grav;
+
+  ctx.fillStyle = "#000";
+  ctx.font = "24px Verdana";
+  ctx.fillText(`Счёт: ${score}`, 10, cvs.height - 20);
+
   requestAnimationFrame(draw);
 }
 
