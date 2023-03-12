@@ -47,6 +47,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
 
+
   &__author {
     margin: 0;
     padding: 0;
@@ -54,32 +55,44 @@ html {
     margin-right: 20px;
     margin-bottom: 20px;
     padding-left: 20px;
+    color: $whiteColor;
+    align-self: end;
   }
+
   &__links {
     margin: 0;
     padding: 0;
     margin-right: 20px;
     margin-bottom: 20px;
   }
+
   &__links-title {
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
     font-size: 20px;
+    color: $whiteColor;
   }
+
   &__links-nav {
     margin: 0;
     padding: 0;
   }
+
   &__list {
     margin: 0;
     list-style: none;
     padding: 0;
   }
+
   &__link {
     text-decoration: none;
     text-decoration: none;
-    color: $blackColor;
+    color: $whiteColor;
     cursor: pointer;
+
+    &:hover {
+      opacity: 50%;
+    }
   }
 }

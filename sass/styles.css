@@ -50,6 +50,8 @@ html {
   margin-right: 20px;
   margin-bottom: 20px;
   padding-left: 20px;
+  color: white;
+  align-self: end;
 }
 .footer__links {
   margin: 0;
@@ -62,6 +64,7 @@ html {
   padding: 0;
   margin-bottom: 20px;
   font-size: 20px;
+  color: white;
 }
 .footer__links-nav {
   margin: 0;
@@ -75,6 +78,9 @@ html {
 .footer__link {
   text-decoration: none;
   text-decoration: none;
-  color: black;
+  color: white;
   cursor: pointer;
+}
+.footer__link:hover {
+  opacity: 50%;
 }/*# sourceMappingURL=styles.css.map */
